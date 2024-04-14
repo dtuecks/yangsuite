@@ -48,7 +48,7 @@ COPY uwsgi.ini /yangsuite/
 COPY migrate_and_start.sh /yangsuite/
 RUN chmod +x /yangsuite/migrate_and_start.sh
 RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade setuptools wheel uwsgi
+RUN pip3 install --upgrade setuptools wheel uwsgi==2.0.24
 
 # For PostgresSQL
 # RUN  pip3 install --upgrade psycopg2-binary==2.8.6 tzdata
